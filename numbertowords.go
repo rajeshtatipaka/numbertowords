@@ -16,15 +16,15 @@ var tens = [10]string{
 	"", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety",
 }
 
-//maxNumber is the largest number that this version
+//MaxNumber is the largest number that this version
 // of numberstowords can convert into words.
-const maxNumber = 100
+const MaxNumber = 100
 
 //Convert converts an integer between 0 and MaxNumber to words.
 //If passed a number outside the valid range, it returns an error.
 func Convert(number int) (string, error) {
 
-	if number < 0 || number > maxNumber {
+	if number < 0 || number > MaxNumber {
 		return "", errors.New("number not in valid range")
 	}
 
